@@ -1,0 +1,34 @@
+/* Estilo base aplicado al encabezado */
+h1 {
+  color: white !important;  /* ← Línea 3 con !important */
+  font-size: 2em;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+div{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+/* 1. Prioridad por especificidad */
+body p {
+  color: green;
+}
+
+/* 2. Especificidad más baja pero más reciente en cascada */
+p {
+  color: blue;
+}
+
+/* 3. Cascada simple: color de texto general */
+body {
+  color: red;
+}
+
+a {
+	color: inherit;
+}
+
